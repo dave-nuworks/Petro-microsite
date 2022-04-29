@@ -1,0 +1,56 @@
+.btn-primary{
+    width: 150px;
+    max-height: 40px;
+}
+
+.btn-secondary{
+    width: 75px;
+}
+
+.bi{
+    font-size: 1.5rem;
+}
+
+.bi-soundwave{
+    font-size: 3rem;
+}
+
+.track{
+    min-height: 90px;
+}
+
+.timeline{
+    min-height: 90px;
+    width: 75%;
+    overflow: auto;
+    background-color: rgb(180, 180, 180);
+}
+
+.tl-track{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    background-color: rgb(180, 180, 180);
+    min-height: 90px;
+    overflow: auto;
+    border: 1px solid rgba(0, 0, 0, 0.271);
+}
+
+.sound-box{
+    text-align: center;
+    border: 2px solid;
+    min-width: 125px;
+    min-height: 75px;
+    display: inline-block;
+}
+
+.sound-selected{
+    border-color: red;
+}
+
+.vl {
+    position: fixed;
+    border-left: 3px solid green;
+    height: 295px;
+    z-index: 2;
+  }

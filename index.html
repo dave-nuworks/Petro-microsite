@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Petron Mixer</title>
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+		<script src="https://unpkg.com/tone"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row my-5 justify-content-center">
+				<div class="btn btn-secondary m-1" title="Play" id="play"><i class="bi bi-play-fill"></i></div>
+				<div class="btn btn-secondary m-1" title="Pause"><i class="bi bi-pause-fill"></i></div>
+				<div class="btn btn-secondary m-1" title="Skip to start" id="skip-start"><i class="bi bi-skip-start-fill"></i></div>
+				<div class="btn btn-secondary m-1" title="Skip to end"><i class="bi bi-skip-end-fill"></i></div>
+				<div class="btn btn-secondary m-1" title="Clear All/Selected" id="clearAll"><i class="bi bi-trash3"></i></div>
+			</div>
+			<div class="row">
+				<div class="col-auto">
+					<div class="row track">
+						<div class="btn btn-primary" id="kick">ADD KICK</div>
+					</div>
+					<div class="row track">
+						<div class="btn btn-primary" id="hihat">ADD HI-HAT</div>
+					</div>
+					<div class="row track">
+						<div class="btn btn-primary" id="snare">ADD SNARE</div>
+					</div>
+				</div>
+				<div class="col timeline">
+					<div class="vl"></div>
+					<div class="row tl-track d-flex flex-row" id="kick-tl"></div>
+					<div class="row tl-track d-flex flex-row" id="hihat-tl"></div>
+					<div class="row tl-track d-flex flex-row" id="snare-tl"></div>
+				</div>
+			</div>
+
+			<!-- <div class="row">
+				<div class="col-auto">
+					<div class="btn btn-primary" id="kick">ADD KICK</div>
+				</div>
+				<div class="col timeline d-flex flex-row" id="kick-tl"></div>
+			</div>
+			<div class="row">
+				<div class="col-auto">
+					<div class="btn btn-primary" id="hihat">ADD HI-HAT</div>
+				</div>
+				<div class="col timeline d-flex flex-row" id="hihat-tl"></div>
+			</div>
+			<div class="row">
+				<div class="col-auto">
+					<div class="btn btn-primary" id="snare">ADD SNARE</div>
+				</div>
+				<div class="col timeline d-flex flex-row" id="snare-tl"></div>
+			</div> -->
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pizzicato/0.6.1/Pizzicato.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+		<!-- <script src="jquery-collision.min.js"></script>
+		<script src="jquery-ui-draggable-collision.min.js"></script> -->
+		<script src="js/script.js"></script>
+	</body>
+</html>
